@@ -21,7 +21,7 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-900 to-black" />
       <motion.div 
         style={{ y, opacity }}
-        className="absolute inset-0 bg-[url('hero.jpg')] bg-cover bg-center opacity-20"
+        className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center opacity-20"
       />
       
       {/* Плашка сверху */}
