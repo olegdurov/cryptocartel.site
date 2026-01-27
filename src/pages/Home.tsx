@@ -21,11 +21,11 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-900 to-black" />
       <motion.div 
         style={{ y, opacity }}
-        className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center opacity-20"
+        className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url('hero.jpg')] bg-cover bg-center opacity-20"
       />
       
       {/* Плашка сверху */}
-      <motion.div
+      {/* <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}
@@ -34,23 +34,23 @@ function Hero() {
         <div className="bg-gradient-to-r from-orange-500/10 to-red-600/10 border border-orange-500/20 px-6 py-2 rounded-full">
           <p className="text-orange-400 text-sm font-medium">Без верификаций и СМС</p>
         </div>
-      </motion.div>
+      </motion.div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.h1
+        {/* <motion.h1
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="text-5xl md:text-7xl font-bold text-white mb-6"
+          className="text-5xl md:text-7xl font-bold text-white"
         >
           CryptoCartel
-        </motion.h1>
+        </motion.h1> */}
         
         <motion.p
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-3xl mx-auto"
+          className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-3xl mx-auto mt-8"
         >
           Свободное крипто-сообщество и профессиональные инструменты
         </motion.p>
@@ -76,7 +76,7 @@ function Hero() {
           transition={{ delay: 1, type: "spring" }}
           className="mt-16"
         >
-          <div className="relative w-64 h-64 mx-auto">
+          <div className="relative w-48 h-48 mx-auto">
             <img 
               src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=400" 
               alt="Pablo Escobar Cyborg"
